@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM  "module.dtd">
+<module english="root" chinese="功能菜单">
+    <subModules>
+        <module english="security" chinese="系统管理">
+            <subModules>
+                <module english="manager"  chinese="管理员管理" >
+                    <commands>
+                        <command english="create" chinese="添加管理员" />
+                        <command english="delete" chinese="删除管理员" />
+                        <command english="update" chinese="修改管理员" />
+                        <command english="query" chinese="查询管理员" />
+                        <command english="reset" chinese="重置密码" />
+                    </commands>
+                </module>
+                <module english="teacher"  chinese="教师管理" >
+                    <commands>
+                        <command english="create" chinese="添加教师" />
+                        <command english="delete" chinese="删除教师" />
+                        <command english="update" chinese="修改教师" />
+                        <command english="query" chinese="查询教师" />
+                        <command english="export" chinese="导出用户" />
+                        <command english="reset" chinese="重置密码" />
+                    </commands>
+                </module>
+                <module english="student"  chinese="学员管理" >
+                    <commands>
+                        <command english="create" chinese="添加学员" />
+                        <command english="delete" chinese="删除学员" />
+                        <command english="update" chinese="修改学员" />
+                        <command english="query" chinese="查询学员" />
+                        <command english="export" chinese="导出学员" />
+                        <command english="reset" chinese="重置密码" />
+                    </commands>
+                </module>
+                <module english="navigation"  chinese="导航管理" >
+                    <commands>
+                        <command english="create" chinese="添加导航" />
+                        <command english="delete" chinese="删除导航" />
+                        <command english="update" chinese="修改导航" />
+                        <command english="query" chinese="查询组导航" />
+                    </commands>
+                </module>
+            </subModules>
+        </module>
+    </subModules>
+</module>

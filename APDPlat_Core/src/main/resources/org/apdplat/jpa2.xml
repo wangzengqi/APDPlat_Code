@@ -1,0 +1,36 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+    version="1.0">
+    <persistence-unit name="${persistenceUnit}">
+    	<!--
+        方式一：
+        默认使用扫描，这样更方便, 不区分多数据库，每一个数据库都对所有模型自动建表，哪怕不用
+        -->
+        <jar-file>${scan.jars}</jar-file>
+        
+    	<!--
+        方式二：
+        有点麻烦，区分多数据库，为每一个数据库手动指定需要映射的模型
+        -->
+        <!--
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        
+        <class>org.apdplat.module.dictionary.model.Dic</class>
+        <class>org.apdplat.module.dictionary.model.DicItem</class>
+        <class>org.apdplat.module.module.model.Command</class>
+        <class>org.apdplat.module.module.model.Module</class>
+        <class>org.apdplat.module.security.model.Org</class>
+        <class>org.apdplat.module.security.model.Position</class>
+        <class>org.apdplat.module.security.model.Role</class>
+        <class>org.apdplat.module.security.model.User</class>
+        <class>org.apdplat.module.security.model.UserGroup</class>
+        <class>org.apdplat.module.system.model.BackupScheduleConfig</class>
+        <class>org.apdplat.module.index.model.IndexScheduleConfig</class>
+        <class>org.apdplat.module.info.model.InfoType</class>
+        <class>org.apdplat.module.info.model.InfoTypeContent</class>
+        <class>org.apdplat.module.info.model.News</class>
+        <class>org.apdplat.module.info.model.NewsContent</class>
+        -->
+    </persistence-unit>
+</persistence>
